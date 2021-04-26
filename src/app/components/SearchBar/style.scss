@@ -1,0 +1,9 @@
+.search-bar-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+
+  .input.MuiFormControl-root {
+    width: 250px;
+  }
+}

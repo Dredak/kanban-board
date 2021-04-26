@@ -1,0 +1,56 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  color: white;
+  padding: 20px;
+  margin: 0px auto;
+  margin-bottom: 10px;
+  cursor: grab;
+
+  &:hover .delete-button {
+    display: inline-block;
+  }
+
+  .delete-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+  }
+
+  .input.MuiFormControl-root {
+    margin-bottom: 5px;
+  }
+}
+
+.card-todo {
+  background-color: #56b2e5;
+}
+
+.card-inProgress {
+  background-color: #e86b79;
+}
+
+.card-done {
+  background-color: #4c5e74;
+}
+
+.card-edit {
+  justify-content: center;
+  background-color: white;
+  padding: 20px 0px;
+  cursor: initial;
+
+  .buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.dragging-card {
+  background-color: dodgerblue;
+  cursor: grabbing;
+}
